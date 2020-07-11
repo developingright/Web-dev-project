@@ -1,0 +1,183 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+@font-face {
+    font-family: 'Montserrat-black'; /*a name to be used later*/
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap'); /*URL to font*/
+}
+
+.navbar-nav a{
+  text-decoration: none !important;
+  color: black !important;
+  font-size: 1em;
+  font-weight: 600;
+
+}
+.navbar{
+
+  background-color: none;
+  background: none !important;
+}
+header{
+  display: flex;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  background-image: url(../images/menuban.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#align-right{
+  margin-right: 2vh;
+  font-size: .9em;
+}
+#align-left{
+  margin-left: 8vh ;
+}
+#menulogo{
+  position: relative;
+  margin-top: 10vh;
+  margin-left: 70vw;
+}
+header p{
+  position: relative;
+  margin-left: 68vw;
+  margin-top: 15vh;
+  width: 20vw;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.sidemenu{
+  background-color: #FF7979;
+  width: 20vw;
+  height: 200vh;
+  z-index: ;
+}
+.sidemenu h4{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:lighter ;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+#burg{
+  position: absolute;
+  margin-top: 40vh;
+  margin-left: 3vw;
+}
+#bev{
+  position: absolute;
+  margin-top: 50vh;
+  margin-left: 3vw;
+}
+#fries{
+  position: absolute;
+  margin-top: 60vh;
+  margin-left: 3vw;
+}
+#combo{
+  position: absolute;
+  margin-top: 70vh;
+  margin-left: 3vw;
+}
+#specials{
+  position: absolute;
+  margin-top: 80vh;
+  margin-left: 3vw;
+}
+#arrow{
+  position: absolute;
+  color:white;
+  font-size: 2em;
+  margin-top: 3vh;
+  margin-left: 13vw;
+}
+.main-content{
+  /* z-index: -1; */
+  text-decoration: none;
+  width: 100%;
+  height: 200vh;
+  position: absolute;
+  text-align: center;
+}
+.burgersection h2{
+  margin-top:10vh;
+  font-weight: bold;
+  color: black;
+  margin-left:60vh;
+}
+.smallpost{
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 10vh;
+  text-align: center;
+  margin-left: 35vw;
+  width: 40vh;
+  height: 54vh;
+  background-color: #fff;
+  border-radius: 4vh;
+  box-shadow: 0px 0px 10px #FF7272;
+}
+.smallpost img{
+  border-radius: 50%;
+  margin-top: 2vh;
+}
+.smallpost h3{
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 2vh;
+}
+#Price{
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: #FF5A5A;
+  float: left;
+  margin-left: 6vh;
+}
+#dollar{
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: black;
+  float: left;
+  margin-left: 12vh;
+}
+.buy{
+  text-decoration: none;
+  background-color: #A0FFB0;
+  color: white;
+  float: left;
+  margin-left: 5vh;
+  margin-top: 3vh;
+  padding:1vh 3vh;
+  border-radius: 4vh;
+
+}
+#calorie{
+  font-size: 0.9em;
+  color: #7D7D7D;
+  float: left;
+  margin-top: 4vh;
+  margin-left: 10vh;
+}
+.post2{
+  margin-left:70vw;
+}
+.post3{
+    margin-top: 100vh;
+}
+#Beverages{
+  position: absolute;
+  margin-left: 58%;
+  margin-top: 80vh;
+}
+.post4{
+  margin-left:70vw;
+  margin-top: 100vh;
+}
