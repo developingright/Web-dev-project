@@ -18,6 +18,7 @@ a{
 }
 .navbar-brand{
   color: white !important;
+  font-weight: bold;
 }
 
 .navbar-nav a{
@@ -26,6 +27,14 @@ a{
 }
 .navbar{
   background: none !important;
+}
+.active {
+  padding: 0px 10px 0px 10px;
+  border-bottom: 2px solid transparent;
+}
+.active:hover{
+  border-color: #ff0000;
+  transition: border-color 1.3s;
 }
 header{
   overflow: hidden;
@@ -222,6 +231,13 @@ h1 {
   background-color: #F9F9F9;
   border-radius: 4vh;
   box-shadow: 0px 4px 10px #DF56B9;
+  transition: box-shadow 250ms;
+  transition-timing-function:ease-in-out;
+}
+.smallpost:hover{
+  box-shadow: 0px 4px 20px #DF56B9;
+  transition: box-shadow 500ms;
+  transition-timing-function:ease-in-out;
 }
 .smallpost h3{
   text-align: center;
@@ -232,6 +248,7 @@ h1 {
   text-align: center;
   width: 15vw;
   font-size: .8em;
+  padding-left: 30px;
   margin-top: 4vh;
 }
 .placeholder-img{

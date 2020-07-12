@@ -4,7 +4,7 @@
   scroll-behavior: smooth;
 }
 a{
-  text-decoration: none;
+  text-decoration: none !important;
 }
 @font-face {
     font-family: 'Montserrat-black'; /*a name to be used later*/
@@ -14,14 +14,21 @@ a{
 .navbar-nav a{
   text-decoration: none !important;
   color: black !important;
-  font-size: 1em;
-  font-weight: 600;
+  /* font-size: 1.4em; */
+  /* font-weight: lighter; */
 
 }
 .navbar{
-
   background-color: none;
   background: none !important;
+}
+.active {
+  padding: 0px 10px 0px 10px;
+  border-bottom: 2px solid transparent;
+}
+.active:hover{
+  border-color: #ff0000;
+  transition: border-color 1.3s;
 }
 header{
   display: flex;
@@ -56,15 +63,17 @@ header p{
 .sidemenu{
   background-color: #FF7979;
   width: 20vw;
-  height: 200vh;
+  height: 500vh;
   z-index: ;
 }
-.sidemenu h4{
+.sidemenu a{
   font-family: 'Open Sans', sans-serif;
   font-weight:lighter ;
   text-align: center;
   position: relative;
-  color: white;
+  font-size: 1.7em;
+  text-decoration: none !important;
+  color: white !important;
 }
 #burg{
   position: absolute;
@@ -102,7 +111,7 @@ header p{
   /* z-index: -1; */
   text-decoration: none;
   width: 100%;
-  height: 200vh;
+  height: 500vh;
   position: absolute;
   text-align: center;
 }
@@ -151,7 +160,7 @@ header p{
 .buy{
   text-decoration: none;
   background-color: #A0FFB0;
-  color: white;
+  color: white !important;
   float: left;
   margin-left: 5vh;
   margin-top: 3vh;
@@ -181,13 +190,61 @@ header p{
   margin-left:70vw;
   margin-top: 100vh;
 }
+.post5{
+  margin-left:70vw;
+  margin-top: 190vh;
+}
+.fries{
+  position: absolute;
+  margin-left: 58%;
+  margin-top: 170vh;
+  font-weight: bold;
+  margin-left:60vw;
+  color: black;
+}
+.post6{
+    margin-top: 190vh;
+}
+.post6 img{
+    border-radius: 50%;
+}
+.combo{
+  position: absolute;
+  margin-left: 58%;
+  margin-top: 260vh;
+  font-weight: bold;
+  margin-left:60vw;
+  color: black;
+}
+.post7{
+  margin-left:70vw;
+  margin-top: 280vh;
+}
+.post8{
+  margin-top: 280vh;
+}
+.post10{
+  margin-left:70vw;
+  margin-top: 380vh;
+}
+.post9{
+  margin-top: 380vh;
+}
+.special{
+  position: absolute;
+  margin-left: 58%;
+  margin-top: 360vh;
+  font-weight: bold;
+  margin-left:60vw;
+  color: black;
+}
 .clip {
     position: absolute;
     background: #fd79a8;
     padding: 1em;
     border-radius: 10px;
     width: 37vh;
-    clip-path: circle(10% at 90% 20%);
+    clip-path: circle(10% at 89.1% 25%);
     margin-left: 75vw;
     z-index: 4;
     margin-top: 8vh;
@@ -204,9 +261,9 @@ header p{
     float: right;
     color: white;
     font-weight: bolder;
+    font-size: 1.6em;
     transition: color .3s;
     position: relative;
-    margin-right: 0.35vw;
     box-shadow:0px 0px 10px #0000;
 }
 
@@ -230,4 +287,16 @@ header p{
 
 .clip span:hover {
     color: #81ecec;
+}
+.form-control{
+  float: right;
+  text-align: center;
+  width:60px !important;
+}
+#select{
+  text-align: center;
+  margin-left: 2vw !important;
+}
+.page-footer{
+  background-color: #dfe6e9 !important;
 }

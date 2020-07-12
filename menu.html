@@ -11,7 +11,7 @@
   <body>
 
     <header class="banner">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
           <!-- <a class="navbar-brand" href="#">Navbar</a> -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -19,12 +19,13 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <!-- <a id="align-right" class="nav-item nav-link active" href="#">Menu <span class="sr-only">(current)</span></a> -->
-                <a id="align-left" class="nav-item nav-link" href="index.html ">HOME</a>
+                <a id="align-left" class="nav-item nav-link" href="index.html "><img src="images/b3.png" draggable="false"></a>
             </div>
               <div class="navbar-nav ml-auto">
                   <!-- <a id="align-right" class="nav-item nav-link active" href="#">Menu <span class="sr-only">(current)</span></a> -->
-                  <a id="align-right" class="nav-item nav-link" href="about.html">ABOUT US</a>
-                  <a id="align-right"class="nav-item nav-link" href="how_we_work.html">HOW WE WORK</a>
+                  <a id="align-right" class="nav-item nav-link active" href="about.html">HOME</a>
+                  <a id="align-right" class="nav-item nav-link active" href="about.html">ABOUT US</a>
+                  <a id="align-right"class="nav-item nav-link active" href="how_we_work.html">HOW WE WORK</a>
               </div>
           </div>
         </nav>
@@ -33,19 +34,62 @@
     </header>
     <div class="main-content">
       <div class="clip">
-        <span>i</span>
+        <span>ⓘ</span>
         <h1>Fun Fact!</h1>
         <p>Americans alone consume approximately 50-billion burgers a year!</p>
       </div>
       <div class="burgersection">
-        <h2>BURGERS</h2>
+        <h2 id="burgers">BURGERS</h2>
         <div class="smallpost">
           <img src="images/burgermenu.png" alt="" class="placeholder-img">
           <h3>Mac & Cheese</h3>
           <p>⭐⭐⭐⭐</p>
           <span id="Price">Price</span>
           <span id="dollar">$5.79</span>
-          <a href="#" class="buy" >Buy</a>
+          <a href="#" class="buy"data-toggle="modal" data-target="#modal1" >Buy</a>
+          <!-- Button trigger modal -->
+
+<!-- Modal -->
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aaria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Checkout</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Extra Cheese</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Extra patties</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Extra Fillings</label>
+                </div>
+                <div class="form-group">
+                  <label id="select" >Select quantity</label>
+                  <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
           <span id="calorie">550 Cal.</span>
         </div>
         <div class="smallpost post2">
@@ -54,7 +98,47 @@
           <p>⭐⭐⭐⭐</p>
           <span id="Price">Price</span>
           <span id="dollar">$4.79</span>
-          <a href="#" class="buy">Buy</a>
+          <a href="#" class="buy" data-toggle="modal" data-target="#modal2" >Buy</a>
+          <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aaria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Checkout</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Extra Cheese</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Extra patties</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Extra Egg</label>
+                  </div>
+                  <div class="form-group">
+                    <label id="select" >Select quantity</label>
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
           <span id="calorie">500 Cal.</span>
         </div>
         <h2 id="Beverages">BEVERAGES</h2>
@@ -64,7 +148,47 @@
           <p>⭐⭐⭐⭐</p>
           <span id="Price">Price</span>
           <span id="dollar">$7.79</span>
-          <a href="#" class="buy">Buy</a>
+          <a href="#" class="buy" data-toggle="modal" data-target="#modal3" >Buy</a>
+          <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aaria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Checkout</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Strawberry</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Chocolate</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Icecream on Top</label>
+                  </div>
+                  <div class="form-group">
+                    <label id="select" >Select quantity</label>
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
           <span id="calorie">350 Cal.</span>
         </div>
         <div class="smallpost post4">
@@ -77,18 +201,154 @@
           <span id="calorie">200 ml</span>
         </div>
       </div>
+        <h2 id="frie"class="fries">FRIES</h2>
+        <div class="smallpost post6">
+          <img src="images/perifries.png" alt="" class="placeholder-img">
+          <h3>Peri-Peri Fries</h3>
+          <p>⭐⭐⭐⭐⭐</p>
+          <span id="Price">Price</span>
+          <span id="dollar"> $2.99</span>
+          <a href="#" class="buy">Buy</a>
+          <span id="calorie">350 Cal.</span>
+        </div>
+      <div class="smallpost post5">
+        <img src="images/fries.png" alt="" class="placeholder-img">
+        <h3>Fries</h3>
+        <p>⭐⭐⭐⭐</p>
+        <span id="Price">Price</span>
+        <span id="dollar"> $2.01</span>
+        <a href="#" class="buy">Buy</a>
+        <span id="calorie">200 Cal.</span>
+      </div>
+      <h2 class="combo" id="combos">COMBO</h2>
+      <div class="smallpost post8">
+        <img src="images/combo1.png" alt="" class="placeholder-img">
+        <h3>Mini-Meal</h3>
+        <p>⭐⭐⭐⭐</p>
+        <span id="Price">Price</span>
+        <span id="dollar"> $5.99</span>
+        <a href="#" class="buy">Buy</a>
+        <span id="calorie">350 Cal.</span>
+      </div>
+    <div class="smallpost post7">
+      <img src="images/combo2.png" alt="" class="placeholder-img">
+      <h3>Martian Meal</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <span id="Price">Price</span>
+      <span id="dollar"> $10</span>
+      <a href="#" class="buy">Buy</a>
+      <span id="calorie">500 Cal.</span>
+    </div>
+    <h2 class="special" id="specia">Specials!</h2>
+    <div class="smallpost post10">
+      <img src="images/rasgulla.png" alt="" class="placeholder-img">
+      <h3>Indian Rasgulla</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <span id="Price">Price</span>
+      <span id="dollar"> $5.99</span>
+      <a href="#" class="buy">Buy</a>
+      <span id="calorie">100 Cal.</span>
+    </div>
+  <div class="smallpost post9">
+    <img src="images/boruto.png" alt="" class="placeholder-img">
+    <h3>Burrito</h3>
+    <p>⭐⭐⭐⭐</p>
+    <span id="Price">Price</span>
+    <span id="dollar"> $3.99</span>
+    <a href="#" class="buy">Buy</a>
+    <span id="calorie">200 Cal.</span>
+  </div>
+
+    </div>
 
     </div>
     <div class="sidemenu">
-      <p id="arrow">🡪</p>
-      <h4 id="burg">Burgers 🍔</h4>
-      <h4 id="bev">Beverages 🍹</h4>
-      <h4 id="fries">Fries 🍟</h4>
-      <h4 id="combo">Combo Meals</h4>
-      <h4 id="specials">Specials!</h4>
+        <p id="arrow">🡪</p>
+        <a href="#burgers" id="burg">Burgers 🍔</a>
+        <a href="#Beverages" id="bev">Beverages 🍹</a>
+        <a href="#frie" id="fries">Fries 🍟</a>
+        <a href="#combos" id="combo">Combo Meals</a>
+        <a href="#specia" id="specials">Specials!</a>
+
     </div>
 
+    <!-- Footer -->
+<footer class="page-footer font-small blue   pt-4">
 
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Galaxy Burger</h5>
+        <p>Disclaimer , This website is property of Galaxy Burgers.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Services</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Galaxy Delivery</a>
+          </li>
+          <li>
+            <a href="#!">Mobile Order & Pay</a>
+          </li>
+          <li>
+            <a href="#!">Wifi</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Careers</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Job Opportunities</a>
+          </li>
+          <li>
+            <a href="#!">Employee Perks</a>
+          </li>
+          <li>
+            <a href="#!">Apply Now</a>
+          </li>
+
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="home.html"> Galaxy-Burger.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
