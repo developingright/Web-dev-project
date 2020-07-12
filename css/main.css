@@ -28,18 +28,12 @@ a{
   background: none !important;
 }
 header{
-  width: 100%;
-  height: 63vh;
   overflow: hidden;
+  width: 100%;
+  height: 60vh;
   position: relative;
 }
 .img-fluid{
-  position: fixed;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
   position: absolute;
 }
 #bedu{
@@ -192,7 +186,7 @@ h1 {
     }
 }
 .containera{
-  display: flex;
+  /* display: flex; */
   background-color: #F9F9F9;
   height: 100vh;
   background-image: url(../images/b.png);
@@ -327,6 +321,9 @@ h1 {
   margin-left: 7vw;
   /* border-radius: 4vh; */
 }
+.containana{
+  height: 100vh;
+}
 .containana h1{
   font-family: 'Montserrat', sans-serif;
   color:black;
@@ -353,17 +350,59 @@ h1 {
   position: absolute;
   margin-top: 20vh;
   margin-left:59vw;
-  width:80vh;
+  width:50vh;
   box-shadow: 0px 0px 10px #000000;
-  height: 80vh;
+  height: 50vh;
 }
 
-@media (min-width: 1367px) and (max-width: 1920px) {
+/* @media only screen and (min-width: 136px) {
   #carouselExampleIndicators{
     position: absolute;
       margin-top: 13vh;
       margin-left: 5vw;
       width: 160vh;
       height: 80vh;
+  }
+} */
+
+@media (min-width: 1000px) and (max-width: 1280px) {
+  #km-btn{
+    margin-left: 18vw;
+  }
+
+  .containana{
+    align-items: center;
+    justify-content: center;
+  }
+  #carouselExampleIndicators{
+      position: absolute;
+      margin-top: 13vh;
+      margin-left: 4.4vw;
+      width: 150vh;
+      height: 60vh;
+  }
+  .contain img{
+     height: 70vh;
+     width: 70vh;
+  }
+}
+@media (min-width:1367px){
+  #heading{
+    margin-left:40%;
+  }
+  .para{
+    margin-top: 22vh;
+    font-size: 1.5em;
+    margin-left: 37%;
+  }
+  #km-btn{
+    margin-left: 16vw;
+  }
+  #carouselExampleIndicators{
+      position: absolute;
+      margin-top: 13vh;
+      margin-left:10vw;
+      width: 140vh;
+      height: 60vh;
   }
 }
