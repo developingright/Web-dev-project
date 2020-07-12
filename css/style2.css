@@ -2,13 +2,17 @@ html {
   width: 100%;
   height: 100%;
 }
-
+body{
+  background-size: cover;
+}
 .navbar {
-  position: fixed;
+  position: relative;
   font-family: "Montserrat";
   z-index: 100;
 }
-
+.navbar a{
+  font-weight: bold;
+}
 .navbar img {
   width: 7%;
   height: 90%;
@@ -20,12 +24,13 @@ html {
   padding: 0px 10px 0px 10px;
   border-bottom: 2px solid transparent;
 }
-
+.food{
+  box-shadow: 0px 1px 9px #000;
+}
 .active:hover{
   border-color: #ff0000;
   transition: border-color 1.3s;
 }
-
 .content {
   font-family: "Montserrat";
   text-align: left;
@@ -36,16 +41,23 @@ html {
 }
 
 .content h1 {
+  text-align: center;
   margin-top: 30px;
-  background-color: #2ECC71;
-  width: 99%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ff7675;
+  width: 40%;
+  color: #fff;
+  font-weight:600;
+  border-radius: 4vh;
 }
 
 .content img {
-  margin-top: 30px;
+  margin-top: 40px;
   float: right;
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
+
 }
 
 .content p {
@@ -54,9 +66,9 @@ html {
 
 .inner-content {
   width: 45%;
-  margin-left: 20px;
+  /* margin-left: 10px; */
   margin-top: 50px;
-  box-shadow: -4px 0px 10px;
+  box-shadow: 0px 0px 10px;
   border-radius: 20px;
   text-align: center;
   padding: 30px 10px 30px 10px;
@@ -78,7 +90,7 @@ ul {
 .box-content {
   width: 75%;
   text-align: center;
-  box-shadow: -4px 0px 10px #000000;
+  box-shadow: 0px 0px 10px #FF7272;
   margin-bottom: 50px;
   border-radius: 20px;
   padding: 30px 0px 30px 0px;
