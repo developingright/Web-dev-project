@@ -365,9 +365,9 @@ h1 {
   }
 } */
 
-@media (min-width: 1000px) and (max-width: 1280px) {
+@media (max-width: 1280px) {
   #km-btn{
-    margin-left: 18vw;
+    margin-left: 14.4vw;
   }
 
   .containana{
@@ -377,7 +377,7 @@ h1 {
   #carouselExampleIndicators{
       position: absolute;
       margin-top: 13vh;
-      margin-left: 4.4vw;
+      margin-left: 12vw;
       width: 150vh;
       height: 60vh;
   }
@@ -396,12 +396,12 @@ h1 {
     margin-left: 37%;
   }
   #km-btn{
-    margin-left: 16vw;
+    margin-left: 16.4vw;
   }
   #carouselExampleIndicators{
       position: absolute;
       margin-top: 13vh;
-      margin-left:10vw;
+      margin-left:20vw;
       width: 140vh;
       height: 60vh;
   }
