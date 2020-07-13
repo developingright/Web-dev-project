@@ -124,3 +124,8 @@ ul {
 .page-footer{
   margin-top: 210vh;
 }
+@media (min-width:1367px){
+  .content img{
+    margin-top: 10vh;
+  }
+}
