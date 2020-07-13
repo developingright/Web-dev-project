@@ -300,3 +300,13 @@ header p{
 .page-footer{
   background-color: #dfe6e9 !important;
 }
+.go-up{
+  position: absolute;
+  text-decoration: none;
+  color : white !important;
+  margin-top: 450vh;
+  margin-left: 30vw;
+  background-color: #74b9ff;
+  padding: 1vh 1vh 1vh 1vh;
+  border-radius: 1vh;
+}
